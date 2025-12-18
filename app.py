@@ -3,8 +3,11 @@ import requests
 import pandas as pd
 import datetime
 import re
+import os
 
-API_BASE = "https://global-public-holiday-api.onrender.com"  # FastAPI backend URL
+API_BASE = os.getenv("API_BASE_URL", "https://global-public-holiday-api.onrender.com")  # Default if not set
+
+#API_BASE = "https://global-public-holiday-api.onrender.com"  # FastAPI backend URL
 
 st.set_page_config(page_title="祝日と祭りビューア", page_icon="🎌")
 st.title("🎌 世界の祝日・祭り検索アプリ")
