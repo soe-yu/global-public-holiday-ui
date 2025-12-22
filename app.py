@@ -5,7 +5,7 @@ import datetime
 import re
 import os
 
-API_BASE = os.getenv("API_BASE_URL", "https://global-public-holiday-api.onrender.com")  # Default if not set
+API_BASE = os.getenv("API_BASE_URL", "https://global-public-holiday-api-modified.onrender.com")  # Default if not set
 
 #API_BASE = "https://global-public-holiday-api.onrender.com"  # FastAPI backend URL
 
